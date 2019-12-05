@@ -1,0 +1,10 @@
+<div 
+  class="dynamic-field form-button"
+  [formGroup]="group">
+  <button
+    [disabled]="config.disabled || (!group.valid && config.fillAll)"
+    type="submit">
+    {{ config.label }}
+  </button>
+</div>
+  

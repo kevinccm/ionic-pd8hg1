@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="container-fluid">
+    <br /><br />
+    <ul class="list-unstyled multi-steps">
+      <li>Start</li>
+      <li>First Step</li>
+      <li class="is-active">Middle Stage</li>
+      <li>Finish</li>
+    </ul>
+  </div>
+  <div class="app">
+    <dynamic-form
+      [config]="config"
+      #form="dynamicForm"
+      (submit)="submit($event)">
+    </dynamic-form>
+    {{ form.valid }}
+    {{ form.value | json }}
+  </div>
+</ion-content>

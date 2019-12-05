@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<form
+  class="dynamic-form"
+  [formGroup]="form"
+  (submit)="handleSubmit($event)">
+    <ng-container *ngFor="let item of config;">
+      <ng-container [ngSwitch]="item.type">
+      <form-select *ngSwitchCase="'select'" [group]="form" [config]="item"></form-select>
+      <form-input  *ngSwitchCase="'input'"  [group]="form" [config]="item"></form-input>
+      <form-label  *ngSwitchCase="'label'"  [group]="form" [config]="item"></form-label>
+      <form-button *ngSwitchCase="'button'" [group]="form" [config]="item"></form-button> 
+    </ng-container>
+    </ng-container>
+</form>
+    {{ form.valid }}
+    {{ form.value | json }}
+</ion-content>
