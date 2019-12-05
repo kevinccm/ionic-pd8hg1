@@ -1,8 +1,8 @@
 import { Component, Input, ViewContainerRef } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
-import { Field } from '../../dynamic-form/models/field.interface';
-import { FieldConfig } from '../../dynamic-form/models/field-config.interface';
+import { Field } from '../../component/dynamic-form/models/field.interface';
+import { FieldConfig } from '../../component/dynamic-form/models/field-config.interface';
 
 
 @Component({

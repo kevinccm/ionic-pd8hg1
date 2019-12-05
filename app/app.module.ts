@@ -8,13 +8,13 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
-import { DynamicFormModule } from './dynamic-form/dynamic-form.module';
+import { DynamicFormModule } from './component/dynamic-form/dynamic-form.module';
 // import { DynamicFormComponent } from './dynamic-form/containers/dynamic-form/dynamic-form.component';
-import { FormLabelComponent } from './field-element/form-label/form-label.component';
-import { FormSelectComponent } from './field-element/form-select/form-select.component';
-import { FormButtonComponent } from './field-element/form-button/form-button.component';
-import { FormInputComponent } from './field-element/form-input/form-input.component';
-import { FormErrorComponent } from './field-element/form-error/form-error.component';
+import { FormLabelComponent } from './component/field-element/form-label/form-label.component';
+import { FormSelectComponent } from './component/field-element/form-select/form-select.component';
+import { FormButtonComponent } from './component/field-element/form-button/form-button.component';
+import { FormInputComponent } from './component/field-element/form-input/form-input.component';
+import { FormErrorComponent } from './component/field-element/form-error/form-error.component';
 import { ValidateOnBlurDirective } from './directive/validate-on-blur.directive';
 
 

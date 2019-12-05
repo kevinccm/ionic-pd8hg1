@@ -1,8 +1,8 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { Validators } from '@angular/forms';
 
-import { FieldConfig } from '../../app/dynamic-form/models/field-config.interface';
-import { DynamicFormComponent } from '../../app/dynamic-form/containers/dynamic-form/dynamic-form.component';
+import { FieldConfig } from '../../app/component/dynamic-form/models/field-config.interface';
+import { DynamicFormComponent } from '../../app/component/dynamic-form/containers/dynamic-form/dynamic-form.component';
 
 import { NavController } from 'ionic-angular';
 

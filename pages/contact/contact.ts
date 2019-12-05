@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
 
-import { FieldConfig } from '../../app/dynamic-form/models/field-config.interface';
+import { FieldConfig } from '../../app/component/dynamic-form/models/field-config.interface';
 
 @Component({
   selector: 'page-contact',
