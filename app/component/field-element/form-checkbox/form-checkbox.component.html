@@ -1,0 +1,12 @@
+<div 
+  class="dynamic-field form-input" 
+  [formGroup]="group">
+  <label>{{ config.label }}</label>
+  <input
+    validateOnBlur
+    type="checkbox"
+    [value]="(config.value)? config.value : null"
+    [formControlName]="config.name"
+    [validateFormControl]="group.controls[config.name]">
+    <form-error [group]="group" [config]="config"></form-error>
+</div>

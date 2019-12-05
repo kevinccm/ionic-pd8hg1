@@ -16,6 +16,7 @@ import { FormButtonComponent } from './component/field-element/form-button/form-
 import { FormInputComponent } from './component/field-element/form-input/form-input.component';
 import { FormErrorComponent } from './component/field-element/form-error/form-error.component';
 import { ValidateOnBlurDirective } from './directive/validate-on-blur.directive';
+import { FormCheckboxComponent } from './component/field-element/form-checkbox/form-checkbox.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { ValidateOnBlurDirective } from './directive/validate-on-blur.directive'
     FormInputComponent,
     FormErrorComponent,
     ValidateOnBlurDirective,
+    FormCheckboxComponent,
   ],
   imports: [
     BrowserModule,

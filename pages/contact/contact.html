@@ -13,10 +13,11 @@
   (submit)="handleSubmit($event)">
     <ng-container *ngFor="let item of config;">
       <ng-container [ngSwitch]="item.type">
-      <form-select *ngSwitchCase="'select'" [group]="form" [config]="item"></form-select>
-      <form-input  *ngSwitchCase="'input'"  [group]="form" [config]="item"></form-input>
-      <form-label  *ngSwitchCase="'label'"  [group]="form" [config]="item"></form-label>
-      <form-button *ngSwitchCase="'button'" [group]="form" [config]="item"></form-button> 
+      <form-select    *ngSwitchCase="'select'"    [group]="form" [config]="item"></form-select>
+      <form-input     *ngSwitchCase="'input'"     [group]="form" [config]="item"></form-input>
+      <form-checkbox  *ngSwitchCase="'checkbox'"  [group]="form" [config]="item"></form-checkbox>
+      <form-label     *ngSwitchCase="'label'"     [group]="form" [config]="item"></form-label>
+      <form-button    *ngSwitchCase="'button'"    [group]="form" [config]="item"></form-button> 
     </ng-container>
     </ng-container>
 </form>

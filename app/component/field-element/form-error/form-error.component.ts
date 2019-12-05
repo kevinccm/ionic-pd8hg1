@@ -36,7 +36,7 @@ export class FormErrorComponent implements Field, OnInit {
   displayErrorMessage() {
     if (this.controls.touched) {
       if(this.errors === null) {
-        this.errorMsg = null;
+        return null;
       } else if(this.errors.required) {
         this.errorMsg = this.config.errorMsg.errorRequiredMsg;
       } else if (this.errors.minlength){

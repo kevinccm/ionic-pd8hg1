@@ -33,7 +33,7 @@ export class ContactPage {
       validation: [Validators.required],
       errorMsg: {
         errorRequiredMsg: "This is required"
-      }
+      },
     },
     {
       type: "input",
@@ -47,14 +47,12 @@ export class ContactPage {
       }
     },
     {
-      type: "input",
-      label: "Last name",
-      name: "last-name",
-      placeholder: "Enter your name",
-      validation: [Validators.required, Validators.minLength(4)],
+      type: "checkbox",
+      label: "Agreement",
+      name: "agreement",
+      validation: [Validators.required, Validators.pattern("true")],
       errorMsg: {
-        errorRequiredMsg: "This is required",
-        errorMinLengthMsg: "Please Input 4 characters"
+        errorPatternMsg: "Please click checkbox"
       }
     },
     {
