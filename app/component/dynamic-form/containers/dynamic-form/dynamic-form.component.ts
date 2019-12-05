@@ -51,7 +51,8 @@ export class DynamicFormComponent implements OnChanges, OnInit {
   createGroup() {
     const group = this.fb.group({});
     this.controls.forEach(control => group.addControl(control.name, this.createControl(control)));
-    return new FormGroup(group.controls, { updateOn: 'blur'});
+    // return new FormGroup(group.controls, { updateOn: 'blur'});
+    return new FormGroup(group.controls);
   }
 
   createControl(config: FieldConfig) {
