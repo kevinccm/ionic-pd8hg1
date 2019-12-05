@@ -8,7 +8,8 @@ export interface FieldConfig {
   placeholder?: string,
   type: string,
   validation?: ValidatorFn[],
-  value?: any
+  value?: any,
+  errorMsg?: string
 }
 
 // export interface FormInput {
