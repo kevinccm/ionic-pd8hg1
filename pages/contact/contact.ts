@@ -11,6 +11,7 @@ import { FormGroup, FormBuilder } from "@angular/forms";
 import { Validators } from "@angular/forms";
 
 import { FieldConfig } from "../../app/component/dynamic-form/models/field-config.interface";
+// import { FormCommon } from "../../app/component/dynamic-form/utils/form-common";
 
 @Component({
   selector: "page-contact",
@@ -44,7 +45,7 @@ export class ContactPage {
       errorMsg: {
         errorRequiredMsg: "This is required",
         errorMinLengthMsg: "Please Input 4 characters"
-      }
+      },
     },
     {
       type: "checkbox",
@@ -63,7 +64,7 @@ export class ContactPage {
     }
   ];
 
-  constructor(private fb: FormBuilder, public navCtrl: NavController) {}
+  constructor( private fb: FormBuilder, public navCtrl: NavController) {}
 
   get controls() {
     return this.config.filter(
@@ -72,6 +73,7 @@ export class ContactPage {
   }
 
   ngOnInit() {
+    // this.form = this.formCommon.createGroup(this.fb, this.controls);
     this.form = this.createGroup();
   }
 
