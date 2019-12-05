@@ -15,7 +15,7 @@ export class FormSelectComponent implements Field {
   @Input()
   group: FormGroup;
 
-  get currentItem() {return this.group.get(this.config.name); };
+  // get currentItem() {return this.group.get(this.config.name); };
 
   // onBlur() {
   //   console.log(this.group.get(this.config.name));

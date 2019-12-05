@@ -3,10 +3,11 @@
   [formGroup]="group">
   <label>{{ config.label }}</label>
   <input
+    validateOnBlur
     type="text"
     [value]="(config.value)? config.value : null"
     [attr.placeholder]="config.placeholder"
     [formControlName]="config.name"
-    validateOnBlur>
-    <form-error [currentItem]="currentItem" [config]="config"></form-error>
+    [validateFormControl]="group.controls[config.name]">
+    <form-error [group]="group" [config]="config"></form-error>
 </div>

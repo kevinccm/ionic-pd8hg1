@@ -7,8 +7,8 @@ import { FieldConfig } from '../../dynamic-form/models/field-config.interface';
 
 @Component({
   selector: 'form-input',
+  templateUrl: 'form-input.component.html',
   styleUrls: ['form-input.component.scss'],
-  templateUrl: 'form-input.component.html'
 })
 export class FormInputComponent implements Field {
   @Input()
@@ -18,7 +18,7 @@ export class FormInputComponent implements Field {
 
   // checkError: boolean;
 
-  get currentItem() {return this.group.get(this.config.name); };
+  // get currentItem() {return this.group.get(this.config.name); };
 
   // onBlur() {
   //   console.log(this.group.get(this.config.name));
